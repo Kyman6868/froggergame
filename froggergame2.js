@@ -1,4 +1,4 @@
-//JavaScript Document
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
@@ -113,7 +113,7 @@ function keyUpHandler(e) {
 }
 
 function drawBackground() {
-    //drawing two strips of grass
+   
     ctx.fillStyle = "lime";
     ctx.fillRect(0, 440, 570, 45);
     ctx.fillRect(0, 220, 570, 45);
@@ -142,7 +142,7 @@ function drawBackground() {
     ctx.strokeWidth = 2;
     ctx.stroke();
 
-    //drawing water
+  
     ctx.fillStyle = "blue";
     ctx.fillRect(0, 0, 570, 220);
 }
@@ -497,7 +497,7 @@ function onPad() {
 }
 
 function drawLives() {
-    //count and display lives left
+    
     if (lives - livesLost != 0) {
         ctx.fillStyle = "white";
         ctx.font = "30px Arial";
@@ -507,7 +507,7 @@ function drawLives() {
 
 function victory() {
     if (pad1 && pad2 && pad3 && pad4 && pad5 && pad6) {
-        //print "You won!" at (220, 488)
+        
         ctx.fillStyle = "white";
         ctx.font = "30px Arial";
         ctx.fillText("You won!", (canvas.width / 2) - 60, 525);
@@ -516,7 +516,7 @@ function victory() {
 }
 
 function gameOver() {
-    //end game if they run out of lives
+    
     if (lives - livesLost == 0) {
         play = false;
         ctx.fillStyle = "white";
