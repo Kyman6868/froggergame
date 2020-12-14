@@ -1,0 +1,26 @@
+{
+  "name": "froggergame",
+  "version": "1.0.0",
+  "description": "froggergame",
+  "main": "index.js",
+  "bin" : "startup_script.js",
+ 
+  "pkg" : {  
+   "scripts": [
+      "./frogger/frogger3/*.PNG",
+      "./frogger/froggercars/*.PNG",
+      "./dev/froggergame/*.js",
+      "./dev/froggergame2/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyman6868/froggergame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyman6868/froggergame/issues"
+  },
+  "homepage": "https://github.com/Kyman6868/froggergame#readme"
+}
